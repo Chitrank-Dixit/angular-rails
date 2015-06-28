@@ -1,0 +1,26 @@
+{
+  "name": "flapper-news",
+  "version": "0.0.0",
+  "authors": [
+    "Chitrank-Dixit <chitrankdixit@gmail.com>"
+  ],
+  "description": "simple rest api in ruby on rails",
+  "keywords": [
+    "angular",
+    "rails"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "angular-devise": "~1.1.0"
+  }
+}
