@@ -26,11 +26,6 @@ class PostsController < ApplicationController
     params.require(:post).permit(:link, :title)
   end
 
-  def comment_params
-    params.require(:comment).permit(:body)
-  end
 
-
-  
 
 end

@@ -43,4 +43,4 @@ gem 'angular_rails_csrf'
 # angular rails remplate
 gem 'angular-rails-templates'
 
-
+gem 'sprockets', '2.12.3'

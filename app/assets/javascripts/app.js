@@ -2,7 +2,8 @@ angular.module('flapperNews', ['ui.router', 'templates', 'Devise'])
 .config([
 '$stateProvider',
 '$urlRouterProvider',
-function($stateProvider, $urlRouterProvider) {
+'$locationProvider',
+function($stateProvider, $urlRouterProvider, $locationProvider) {
 
   $stateProvider
     .state('nav', {

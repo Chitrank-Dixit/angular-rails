@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+    root to: 'application#angular'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,7 +56,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root to: 'application#angular'
+  
 
   resources :posts, only: [:create, :index, :show] do
     resources :comments, only: [:show, :create] do
