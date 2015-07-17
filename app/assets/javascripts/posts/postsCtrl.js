@@ -7,11 +7,7 @@ function($scope, posts, post){
 
   $scope.post = post;
 
-  resolve: {
-    post: ['$stateParams', 'posts', function($stateParams, posts) {
-      return posts.get($stateParams.id);
-    }]
-  }
+  
 
   $scope.addComment = function(){
     if($scope.body === '') { return; }

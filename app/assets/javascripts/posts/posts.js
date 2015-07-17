@@ -39,11 +39,7 @@ angular.module('flapperNews')
 	    });
 	};
 
-	resolve: {
-  		postPromise: ['posts', function(posts){
-    	return posts.getAll();
-  		}]
-	}
+	
 
 
 	return o;

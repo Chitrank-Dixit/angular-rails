@@ -15,13 +15,23 @@ function($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('home', {
       url: '/home',
       templateUrl: 'home/_home.html',
-      controller: 'MainCtrl'
+      controller: 'MainCtrl',
+      resolve: {
+        postPromise: ['posts', function(posts){
+        return posts.getAll();
+        }]
+      }
     })
 
     .state('posts', {
       url: '/posts/{id}',
       templateUrl: 'posts/_posts.html',
-      controller: 'PostsCtrl'
+      controller: 'PostsCtrl',
+      resolve: {
+        post: ['$stateParams', 'posts', function($stateParams, posts) {
+        return posts.get($stateParams.id);
+        }]
+      }
     })
 
     .state('login', {
