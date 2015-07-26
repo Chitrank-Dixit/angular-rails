@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
     render 'layouts/application'
   end
 
-  #root to: 'application#angular'
+  
 
   private
   def configure_permitted_parameters
